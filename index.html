@@ -4,18 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/pages/main.css" />
     <title>Hildy</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <nav class="navbar">NavBar</nav>
-        <div class="hero">Hero</div>
-      </header>
-      <section class="story">Story</section>
+      <nav class="navbar">NavBar</nav>
+      <div class="hero">
+        <span class="hero__title hero__title--main">continuous</span
+        ><span class="hero__title hero__title--sub">improvement</span>
+      </div>
+      <!-- <section class="story">Story</section> -->
+      <section class="story__left">
+        <img
+          src="./assets/img/gallery-farm-field.jpg"
+          alt="Headshot Background"
+          class="story__img"
+        />
+        <img
+          src="./assets/img/jacob_headshot.png"
+          alt="Jacob Headshot"
+          class="story__headshot"
+        />
+      </section>
+      <section class="story__right">Story</section>
       <section class="projects">Projects</section>
       <section class="contact">Contact</section>
       <footer class="footer">Footer</footer>
     </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

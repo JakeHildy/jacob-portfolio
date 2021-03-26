@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact {
+  background-color: #777;
+  grid-column: 1/-1;
+}
+
+.footer {
+  background-color: #333;
+  grid-column: 1/-1;
+}
+
+.hero {
+  background-color: #333;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("./../../assets/img/gallery-old-ship.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/-1;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cbb4d4;
+}
+.hero__title {
+  text-transform: uppercase;
+}
+.hero__title--main {
+  font-size: 8rem;
+}
+.hero__title--sub {
+  font-size: 6rem;
+  letter-spacing: 0.9rem;
+}
+
+.navbar {
+  background-color: #999;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.projects {
+  background-color: #999;
+  grid-column: 1/-1;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: repeat();
+}
+.story__left {
+  background-color: #f4f2f2;
+  grid-column: 1/4;
+  padding: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 5.5vw);
+}
+.story__img {
+  width: 100%;
+  display: block;
+}
+.story__headshot {
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.story__right {
+  grid-column: 4/-1;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #cbb4d4, #20002c);
+  height: 120rem;
+  padding: 4rem 8rem;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: #f4f2f2;
+  display: grid;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(6, 1fr);
+  height: 80rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+@use 'global' as *;
+@use './../partials/variables' as *;
+@use './../partials/contact' as *;
+@use './../partials/footer' as *;
+@use './../partials/hero' as *;
+@use './../partials/navbar' as *;
+@use './../partials/projects' as *;
+@use './../partials/story' as *;
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary-light,
+    $color-primary
+  );
+  height: 120rem;
+
+  padding: 4rem 8rem;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: $color-grey-light-2;
+
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(6, 1fr);
+
+  height: 80rem;
+}

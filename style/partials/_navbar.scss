@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+.navbar {
+  background-color: $color-grey-dark-3;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
