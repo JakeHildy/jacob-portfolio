@@ -57,6 +57,10 @@
     height: 15rem;
     display: block;
     object-fit: cover;
+
+    &--extra-padding {
+      padding: 3rem;
+    }
   }
 
   &__title {

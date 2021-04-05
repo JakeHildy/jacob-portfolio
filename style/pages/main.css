@@ -123,6 +123,9 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.card__img--extra-padding {
+  padding: 3rem;
+}
 .card__title {
   color: #cbb4d4;
   background-color: #20002c;
