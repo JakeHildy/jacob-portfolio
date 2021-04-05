@@ -50,6 +50,29 @@ html {
   background-color: #999;
   grid-column: 1/-1;
   grid-row: 1/2;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__home {
+  text-decoration: none;
+  color: #212121;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.navbar__links {
+  list-style: none;
+  display: flex;
+}
+.navbar__link {
+  margin-left: 2rem;
+}
+.navbar__link-img {
+  transition: all 0.2s;
+}
+.navbar__link-img:hover {
+  transform: scale(1.06);
 }
 
 .projects {
