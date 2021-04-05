@@ -1,6 +1,99 @@
 @use 'variables' as *;
 
 .projects {
-  background-color: $color-grey-dark-3;
+  background-color: $color-grey-light-3;
   grid-column: 1 / -1;
+
+  // margin: 15rem 0;
+  padding: 4rem;
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.card {
+  background-color: #fff;
+  width: 100%;
+  height: 45rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0.2rem 0.5rem 1.5rem rgba($black, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  transition: all 0.2s;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
+  &:hover {
+    transform: translateY(-0.7rem) scale(1.03);
+  }
+
+  &__figure {
+    padding: 2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 15rem;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__title {
+    color: $color-primary-light;
+    background-color: $color-primary;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__info {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 1.5rem;
+    padding: 2rem;
+  }
+
+  &__time,
+  &__stack,
+  &__description,
+  &__client {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    width: 1.75rem;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
 }

@@ -14,10 +14,10 @@ body {
     $color-primary-light,
     $color-primary
   );
-  height: 120rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   padding: 4rem 8rem;
-  background-repeat: no-repeat;
 }
 
 .container {
