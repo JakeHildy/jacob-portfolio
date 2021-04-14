@@ -59,6 +59,14 @@ html {
 .footer {
   background-color: #333;
   grid-column: 1/-1;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__legal {
+  color: #faf9f9;
+  font-size: 1.6rem;
 }
 
 .hero {
