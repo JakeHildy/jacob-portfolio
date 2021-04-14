@@ -13,8 +13,47 @@ html {
 }
 
 .contact {
-  background-color: #777;
+  background-color: #f4f2f2;
   grid-column: 1/-1;
+  padding: 10rem 0;
+}
+.contact__container {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("./../../assets/img/design-background.jpg");
+  background-size: cover;
+  width: 60vw;
+  height: 30vw;
+  padding: 0 7rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0.2rem 0.4rem 2rem rgba(33, 33, 33, 0.4);
+}
+.contact__heading {
+  font-size: 3.5rem;
+  color: #20002c;
+  margin-bottom: 2rem;
+}
+.contact__skill {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+.contact__skill-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.contact__info {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-bottom: 0.7rem;
+}
+.contact__email {
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+  text-decoration: none;
+  color: #333;
 }
 
 .footer {
@@ -78,7 +117,7 @@ html {
 .projects {
   background-color: #f0eeee;
   grid-column: 1/-1;
-  padding: 4rem;
+  padding: 10rem 4rem;
 }
 .projects__title {
   text-align: center;
@@ -89,6 +128,87 @@ html {
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.story {
+  display: grid;
+  grid-template-columns: repeat();
+}
+.story__left {
+  background-color: #f4f2f2;
+  grid-column: 1/4;
+  padding: 8rem 6rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 5.5vw);
+}
+.story__item--background {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+.story__item--headshot {
+  width: 30rem;
+  height: 30rem;
+  grid-row: 4/span 2;
+  grid-column: 4/span 2;
+}
+.story__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.story__headshot {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 500px;
+}
+.story__right {
+  padding: 8rem 6rem;
+  grid-column: 4/-1;
+  background-color: #f4f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.story__title {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  color: #20002c;
+}
+.story__summary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  align-self: center;
+  text-align: center;
+}
+.story__cta {
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  background-color: #20002c;
+  color: #cbb4d4;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #330046;
 }
 
 .card {
@@ -155,86 +275,6 @@ html {
 .card__paragraph {
   font-size: 1.4rem;
   font-weight: 400;
-}
-
-.story {
-  display: grid;
-  grid-template-columns: repeat();
-}
-.story__left {
-  background-color: #f4f2f2;
-  grid-column: 1/4;
-  padding: 8rem 6rem;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 5.5vw);
-}
-.story__item--background {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-}
-.story__item--headshot {
-  width: 30rem;
-  height: 30rem;
-  grid-row: 4/span 2;
-  grid-column: 4/span 2;
-}
-.story__img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.story__headshot {
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 500px;
-}
-.story__right {
-  padding: 8rem 6rem;
-  grid-column: 4/-1;
-  background-color: #f4f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.story__title {
-  font-size: 3.2rem;
-  margin-bottom: 4rem;
-  color: #20002c;
-}
-.story__summary {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-  align-self: center;
-  text-align: center;
-}
-.story__cta {
-  align-self: flex-end;
-}
-
-.btn {
-  padding: 2rem 4rem;
-  background-color: #20002c;
-  color: #cbb4d4;
-  border: none;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.btn:hover {
-  background-color: #330046;
 }
 
 body {
