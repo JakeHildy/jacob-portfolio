@@ -1,0 +1,35 @@
+@use 'variables' as *;
+
+.hero {
+  background-color: $color-grey-dark-1;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./../../assets/img/golden-gate-bridge.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / -1;
+  height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-primary-light;
+
+  &__title {
+    text-transform: uppercase;
+
+    &--main {
+      font-size: 8rem;
+    }
+
+    &--sub {
+      font-size: 6rem;
+      letter-spacing: 0.9rem;
+    }
+  }
+}
