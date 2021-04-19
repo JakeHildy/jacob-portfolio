@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" className="navbar__home">
-        Hildy
+        Jake
       </a>
       <ul className="navbar__links">
         <li>
