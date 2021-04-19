@@ -1,0 +1,28 @@
+@use './../../style/variables' as *;
+@use './../../style/mixins' as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: $color-navbar-bg;
+
+  &__home {
+    @include heading-2;
+    text-decoration: none;
+  }
+
+  &__links {
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__link {
+    margin-left: 1rem;
+  }
+
+  &__link-img {
+    width: 10vw;
+  }
+}

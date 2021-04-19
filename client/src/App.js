@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./App.scss";
+import Navbar from "./components/Navbar/Navbar";
 
 class App extends Component {
   state = {};
@@ -6,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Jacob's Portfolio</h1>
+        <Navbar />
       </div>
     );
   }
